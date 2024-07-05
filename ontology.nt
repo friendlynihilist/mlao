@@ -1,0 +1,183 @@
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/dc/terms/creator
+<http://purl.org/dc/terms/creator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/dc/terms/creator> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/ns/oa#Annotation> .
+<http://purl.org/dc/terms/creator> <http://www.w3.org/2000/01/rdf-schema#range> <http://xmlns.com/foaf/0.1/Person> .
+# 
+# http://purl.org/dc/terms/isPartOf
+<http://purl.org/dc/terms/isPartOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/dc/terms/isPartOf> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.shared-canvas.org/ns/Canvas> .
+<http://purl.org/dc/terms/isPartOf> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.shared-canvas.org/ns/Manifest> .
+# 
+# http://purl.org/emmedi/hico/hasInterpretationCriterion
+<http://purl.org/emmedi/hico/hasInterpretationCriterion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/emmedi/hico/hasInterpretationCriterion> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/emmedi/hico/InterpretationAct> .
+<http://purl.org/emmedi/hico/hasInterpretationCriterion> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.org/emmedi/hico/InterpretationCriterion> .
+# 
+# http://purl.org/emmedi/hico/hasInterpretationType
+<http://purl.org/emmedi/hico/hasInterpretationType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/emmedi/hico/hasInterpretationType> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/emmedi/hico/InterpretationAct> .
+<http://purl.org/emmedi/hico/hasInterpretationType> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.org/emmedi/hico/InterpretationType> .
+# 
+# http://w3id.org/mlao/hasAnchor
+<http://w3id.org/mlao/hasAnchor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://w3id.org/mlao/hasAnchor> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/ns/oa#Annotation> .
+<http://w3id.org/mlao/hasAnchor> <http://www.w3.org/2000/01/rdf-schema#range> <http://w3id.org/mlao/Anchor> .
+<http://w3id.org/mlao/hasAnchor> <http://www.w3.org/2000/01/rdf-schema#comment> "A property relating an annotation to its intentional object (i.e. an anchor)." .
+<http://w3id.org/mlao/hasAnchor> <http://www.w3.org/2000/01/rdf-schema#label> "hasAnchor" .
+# 
+# http://w3id.org/mlao/hasConceptualLevel
+<http://w3id.org/mlao/hasConceptualLevel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://w3id.org/mlao/hasConceptualLevel> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/mlao/Anchor> .
+<http://w3id.org/mlao/hasConceptualLevel> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.iflastandards.info/fr/frbr/frbro/F1_Work> .
+<http://w3id.org/mlao/hasConceptualLevel> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.iflastandards.info/fr/frbr/frbro/F2_Expression> .
+<http://w3id.org/mlao/hasConceptualLevel> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.iflastandards.info/fr/frbr/frbro/F4_Manifestation> .
+<http://w3id.org/mlao/hasConceptualLevel> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.iflastandards.info/fr/frbr/frbro/F5_Item> .
+<http://w3id.org/mlao/hasConceptualLevel> <http://www.w3.org/2000/01/rdf-schema#comment> "A property relating an anchor to one of the IFLA bibliographical conceptual levels." .
+<http://w3id.org/mlao/hasConceptualLevel> <http://www.w3.org/2000/01/rdf-schema#label> "hasConceptualLevel" .
+# 
+# http://w3id.org/mlao/isAnchoredTo
+<http://w3id.org/mlao/isAnchoredTo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://w3id.org/mlao/isAnchoredTo> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/mlao/Anchor> .
+<http://w3id.org/mlao/isAnchoredTo> <http://www.w3.org/2000/01/rdf-schema#range> <http://erlangen-crm.org/current/E1_Entity> .
+<http://w3id.org/mlao/isAnchoredTo> <http://www.w3.org/2000/01/rdf-schema#comment> "A property relating an anchor to a real-world entity." .
+<http://w3id.org/mlao/isAnchoredTo> <http://www.w3.org/2000/01/rdf-schema#label> "isAnchoredTo" .
+# 
+# http://www.w3.org/1999/02/22-rdf-syntax-ns#value
+<http://www.w3.org/1999/02/22-rdf-syntax-ns#value> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.w3.org/1999/02/22-rdf-syntax-ns#value> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/ns/oa#TextualBody> .
+<http://www.w3.org/1999/02/22-rdf-syntax-ns#value> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#String> .
+<http://www.w3.org/2001/XMLSchema#String> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.w3.org/ns/oa#hasBody
+<http://www.w3.org/ns/oa#hasBody> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.w3.org/ns/oa#hasBody> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/ns/oa#Annotation> .
+<http://www.w3.org/ns/oa#hasBody> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/ns/oa#TextualBody> .
+# 
+# http://www.w3.org/ns/oa#hasSelector
+<http://www.w3.org/ns/oa#hasSelector> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.w3.org/ns/oa#hasSelector> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/ns/oa#SpecificResource> .
+<http://www.w3.org/ns/oa#hasSelector> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/ns/oa#FragmentSelector> .
+# 
+# http://www.w3.org/ns/oa#hasSource
+<http://www.w3.org/ns/oa#hasSource> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.w3.org/ns/oa#hasSource> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/ns/oa#SpecificResource> .
+<http://www.w3.org/ns/oa#hasSource> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.shared-canvas.org/ns/Canvas> .
+# 
+# http://www.w3.org/ns/oa#hasTarget
+<http://www.w3.org/ns/oa#hasTarget> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.w3.org/ns/oa#hasTarget> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/ns/oa#Annotation> .
+<http://www.w3.org/ns/oa#hasTarget> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/ns/oa#SpecificResource> .
+# 
+# http://www.w3.org/ns/oa#motivatedBy
+<http://www.w3.org/ns/oa#motivatedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.w3.org/ns/oa#motivatedBy> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/ns/oa#Annotation> .
+<http://www.w3.org/ns/oa#motivatedBy> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/ns/oa#Motivation> .
+# 
+# http://www.w3.org/ns/prov#wasGeneratedBy
+<http://www.w3.org/ns/prov#wasGeneratedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.w3.org/ns/prov#wasGeneratedBy> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/ns/oa#Annotation> .
+<http://www.w3.org/ns/prov#wasGeneratedBy> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.org/emmedi/hico/InterpretationAct> .
+# 
+# http://xmlns.com/foaf/0.1/name
+<http://xmlns.com/foaf/0.1/name> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://xmlns.com/foaf/0.1/name> <http://www.w3.org/2000/01/rdf-schema#domain> <http://xmlns.com/foaf/0.1/Person> .
+<http://xmlns.com/foaf/0.1/name> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#String> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/dc/terms/created
+<http://purl.org/dc/terms/created> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://purl.org/dc/terms/created> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#dateTime> .
+# 
+# http://www.w3.org/ns/prov#startedAtTime
+<http://www.w3.org/ns/prov#startedAtTime> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.w3.org/ns/prov#startedAtTime> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#dateTime> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://erlangen-crm.org/current/E1_Entity
+<http://erlangen-crm.org/current/E1_Entity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://erlangen-crm.org/current/E89_Propositional_Object
+<http://erlangen-crm.org/current/E89_Propositional_Object> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://erlangen-crm.org/current/E90_Symbolic_Object
+<http://erlangen-crm.org/current/E90_Symbolic_Object> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://purl.org/emmedi/hico/InterpretationAct
+<http://purl.org/emmedi/hico/InterpretationAct> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://purl.org/emmedi/hico/InterpretationCriterion
+<http://purl.org/emmedi/hico/InterpretationCriterion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://purl.org/emmedi/hico/InterpretationType
+<http://purl.org/emmedi/hico/InterpretationType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://w3id.org/mlao/Anchor
+<http://w3id.org/mlao/Anchor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/mlao/Anchor> <http://www.w3.org/2000/01/rdf-schema#comment> "The referent or intentional object of an annotation (e.g. the mental content of the annotator at the time of creation of the annotation)" .
+<http://w3id.org/mlao/Anchor> <http://www.w3.org/2000/01/rdf-schema#label> "Anchor" .
+# 
+# http://www.iflastandards.info/fr/frbr/frbro/F1_Work
+<http://www.iflastandards.info/fr/frbr/frbro/F1_Work> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.iflastandards.info/fr/frbr/frbro/F2_Expression
+<http://www.iflastandards.info/fr/frbr/frbro/F2_Expression> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.iflastandards.info/fr/frbr/frbro/F4_Manifestation
+<http://www.iflastandards.info/fr/frbr/frbro/F4_Manifestation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.iflastandards.info/fr/frbr/frbro/F5_Item
+<http://www.iflastandards.info/fr/frbr/frbro/F5_Item> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.shared-canvas.org/ns/Canvas
+<http://www.shared-canvas.org/ns/Canvas> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.shared-canvas.org/ns/Manifest
+<http://www.shared-canvas.org/ns/Manifest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.w3.org/2001/XMLSchema#String
+# 
+# http://www.w3.org/ns/oa#Annotation
+<http://www.w3.org/ns/oa#Annotation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.w3.org/ns/oa#FragmentSelector
+<http://www.w3.org/ns/oa#FragmentSelector> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.w3.org/ns/oa#Motivation
+<http://www.w3.org/ns/oa#Motivation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.w3.org/ns/oa#SpecificResource
+<http://www.w3.org/ns/oa#SpecificResource> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.w3.org/ns/oa#TextualBody
+<http://www.w3.org/ns/oa#TextualBody> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://xmlns.com/foaf/0.1/Person
+<http://xmlns.com/foaf/0.1/Person> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/

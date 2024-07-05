@@ -1,0 +1,13 @@
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix : <> .
+<..\index-en.html> a prov:Entity;
+	 dc:title "Multi-Level Annotation Ontology (MLAO)";
+	 prov:wasAttributedTo :agent0;
+	 prov:wasAttributedTo :agent1;
+	 prov:wasAttributedTo <https://github.com/dgarijo/Widoco/>,<http://www.essepuntato.it/lode/>;
+	 prov:specializationOf <http://w3id.org/mlao>;
+.
+:agent0 a prov:Agent; foaf:name "Carlo Teo Pedretti".
+:agent1 a prov:Agent; foaf:name "Maria Francesca Bocchi".
