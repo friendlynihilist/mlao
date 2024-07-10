@@ -1,9 +1,66 @@
 <h2 id="intro" class="list">Introduction <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
 <span class="markdown">Multi-Level Annotation Ontology (MLAO) is a data model that leverages the Web Annotation Data Model (WADM) and integrates key domain standards to effectively address and mitigate the issue of semantic deficit in digital annotations.
     The primary objective of this ontology is therefore to extend the WADM through the integration of the Library Reference Model Ontology (LRMer) and the implementation of its integrated FRBRoo model. Moreover, some elements of the Historical Context Ontology (HiCO) are reused in order to represent the context of hermeneutical activities performed by scholars while generating new information (i.e. an interpretation act), enabling features such as criterion and type of cited sources. CIDOC-CRM and PROV-O standards are also considered to specify entity relationships and provenance. The following sections will present new classes and properties described in MLAO, as well as the existing ontologies which have been reused.
-    
+    <br>
     The following figure shows classes (rectangles), object properties (solid lines
     beginning with a solid circle and ending with a solid arrow), and assertions
     among classes (solid lines ending with a solid arrow).
 </span>
+
+<br>
+
 <img src="resources/fig1.png" width="50%" style="display: block; margin-left: auto; margin-right: auto;">
+
+<div>
+
+    Following the Web Annotation Ontology, the annotation itself is an instance of
+    the class oa:Annotation with the following properties and object classes:
+ 
+    <ul>
+       <li>The <code>mlao:Anchor</code> class describes the intentional
+        object or referent of the annotation, which can be different from the target
+        itself. The instance of the Anchor is then linked through the
+        <code>mlao:hasConceptualLevel</code> object property to an instance of type <code>frbroo:F1_Work</code>,
+        <code>frbroo:F2_Expression</code>, frbroo:F4_Manifestation or <code>frbroo:F5_Item</code>, describing
+        the FRBR conceptual level.</li>
+       <li>the Anchor is linked through the
+        mlao:isAnchoredTo object property to an instance of the work it refers to
+        which represents its real-world counterpart.</li>
+       <li>Finally, the
+        instance of mlao:Anchor class has two properties, mlao:hasConceptualLevel and
+        mlao:isAnchoredTo, which are employed to specify the <code>frbroo:F2_Expression</code> and
+        the real-world entity, respectively.</li>
+       <br>
+       <li><b>Negation handeling</b>. Evidences may convey negative meanings (e.g. the style is inconsistent, the seal is absent). SEBI models negation or absence with the use of a data property (<code>sebi:hasEvaluationScore</code>) 
+          which indicates the positiness or negativeness of the collected evidence. The lower the value of the evaluation score, the lower the degree of positivity of the evidence (e.g. the coherency 
+          of the style is 0 means that the style is incoherent). </li>
+       <li><b>Named individuals</b>. A set of named individuals has been included in the SEBI ontology to model the domain of document authenticity assessment. However, such named entities can be customised depending on the scope of the Knowledge Graph. </li>
+    </ul>
+ 
+ 
+    For example, in the annotation modelled in Figure 2 the creator annotates a
+  specific portion of the image to convey content, namely the transcription,
+  which does not refer to the image itself but to another entity. In fact, the
+  transcription does not concern the digital image itself but rather another
+  kind of entity connected to the manuscript Vat. gr. 984 manuscript, which is
+  an Expression according to the FRBR levels. Consequently, the annotation is
+  linked to an anchor by the property mlao:hasAnchor. This allows the annotator
+  to specify the conceptual level to which they are referring. Such a scenario can be represented as follows (in turtle syntax):
+ 
+    <pre>
+    :donation-valla-opinion a hico:InterpretationAct .
+ 
+    :donation-valla-evidence1 a sebi:Evidence ;
+       sebi:support :donation-valla-opinion ;
+       sebi:account sebi:style ;
+       sebi:evaluate sebi:coherency ;
+       sebi:hasEvaluationScore "0"^^xsd:integer .
+ 
+    :donation-valla-evidence1 a sebi:Evidence ;
+       sebi:support :donation-valla-opinion ;
+       sebi:account sebi:language ;
+       sebi:evaluate sebi:coherency ;
+       sebi:hasEvaluationScore "0"^^xsd:integer .
+    </pre>
+    
+ </div>
