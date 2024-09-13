@@ -35,22 +35,23 @@
     For instance, the manuscript Vat.gr.984 contains an annotation (UUID: 0abd8942-619b-4cf1-964a-66ebd32c8bf6) regarding the creation of the world in 6862 (corresponding to 1354 AD in the Christian era). The content of the annotation is: "Anno della creazione del mondo (annus mundi) 6862 (maggio) che corrisponde all'anno dell’era cristiana (annus Domini) 1354". The fragment is identified by the coordinates xywh=1615,5244,797,312 and visually highlighted with an SVG selector. The interpretation was generated through scholar expertise and contributed by D. Surace, anchoring it to the Scriptio Superior layer of the manuscript. Such a scenario can be represented as follows (in turtle syntax):
  
     <pre>
-        <code>" @prefix ns0: <http://www.w3.org/ns/activitystreams#> .
-@prefix oa: <http://www.w3.org/ns/oa#> .
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-@prefix prov: <http://www.w3.org/ns/prov#> .
-@prefix mlao: <https://purl.archive.org/domain/mlao/> .
-@prefix dct: <https://www.dublincore.org/specifications/dublin-core/dcmi-terms/> .
-@prefix hico: <http://purl.org/emmedi/hico/> .
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix foaf: <http://xmlns.com/foaf/spec/> .
+        <code>
+    @prefix ns0: &lt;http://www.w3.org/ns/activitystreams#&gt; .
+@prefix oa: &lt;http://www.w3.org/ns/oa#&gt; .
+@prefix rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt; .
+@prefix xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt; .
+@prefix prov: &lt;http://www.w3.org/ns/prov#&gt; .
+@prefix mlao: &lt;https://purl.archive.org/domain/mlao/&gt; .
+@prefix dct: &lt;https://www.dublincore.org/specifications/dublin-core/dcmi-terms/&gt; .
+@prefix hico: &lt;http://purl.org/emmedi/hico/&gt; .
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .
+@prefix foaf: &lt;http://xmlns.com/foaf/spec/&gt; .
     
-    <urn:uuid:0abd8942-619b-4cf1-964a-66ebd32c8bf6>
+    &lt;urn:uuid:0abd8942-619b-4cf1-964a-66ebd32c8bf6&gt;
   a oa:Annotation ;
   oa:hasBody [
     a oa:TextualBody ;
-    rdf:value "<p>Anno della creazione del mondo (<i>annus mundi</i>)<i> </i>6862 (maggio) che corrisponde all'anno dell’era cristiana (<i>annus Domini</i>) 1354</p>"^^xsd:string
+    rdf:value "&lt;p&gt;Anno della creazione del mondo (&lt;i&gt;annus mundi&lt;/i&gt;)&lt;i&gt; &lt;/i&gt;6862 (maggio) che corrisponde all'anno dell’era cristiana (&lt;i&gt;annus Domini&lt;/i&gt;) 1354&lt;/p&gt;"^^xsd:string
   ] ;
   oa:hasTarget [
     oa:hasSelector [
@@ -58,32 +59,32 @@
       rdf:value "xywh=1615,5244,797,312"^^xsd:string
     ], [
       a oa:SvgSelector ;
-      rdf:value "<svg xmlns='http://www.w3.org/2000/svg'><path xmlns=\"http://www.w3.org/2000/svg\" d=\"M1615.21528,5556.88889v-312.77778h797.58333v312.77778z\" data-paper-data=\"{&quot;state&quot;:null}\" fill=\"none\" fill-rule=\"nonzero\" stroke=\"#f8e71c\" stroke-width=\"3\" stroke-linecap=\"butt\" stroke-linejoin=\"miter\" stroke-miterlimit=\"10\" stroke-dasharray=\"\" stroke-dashoffset=\"0\" font-family=\"none\" font-weight=\"none\" font-size=\"none\" text-anchor=\"none\" style=\"mix-blend-mode: normal\"/></svg>"^^xsd:string
+      rdf:value "&lt;svg xmlns='http://www.w3.org/2000/svg'&gt;&lt;path xmlns=\"http://www.w3.org/2000/svg\" d=\"M1615.21528,5556.88889v-312.77778h797.58333v312.77778z\" data-paper-data=\"{&quot;state&quot;:null}\" fill=\"none\" fill-rule=\"nonzero\" stroke=\"#f8e71c\" stroke-width=\"3\" stroke-linecap=\"butt\" stroke-linejoin=\"miter\" stroke-miterlimit=\"10\" stroke-dasharray=\"\" stroke-dashoffset=\"0\" font-family=\"none\" font-weight=\"none\" font-size=\"none\" text-anchor=\"none\" style=\"mix-blend-mode: normal\"/&gt;&lt;/svg&gt;"^^xsd:string
     ] ;
-    oa:hasSource <https://digi.vatlib.it/iiif/MSS_Vat.gr.984/canvas/p0715>
+    oa:hasSource &lt;https://digi.vatlib.it/iiif/MSS_Vat.gr.984/canvas/p0715&gt;
   ] ;
   oa:motivatedBy oa:commenting ;
-  prov:wasGeneratedBy <https://purl.archive.org/domain/mlao/interpretation/d7c7f5d1-a8f7-4536-8e32-a88cd6a9018b> ;
-  mlao:hasAnchor <https://purl.archive.org/domain/mlao/anchor/scriptio-superior/0abd8942-619b-4cf1-964a-66ebd32c8bf6> ;
-  dct:creator <https://purl.archive.org/domain/mlao/creator/d-surace> .
+  prov:wasGeneratedBy &lt;https://purl.archive.org/domain/mlao/interpretation/d7c7f5d1-a8f7-4536-8e32-a88cd6a9018b&gt; ;
+  mlao:hasAnchor &lt;https://purl.archive.org/domain/mlao/anchor/scriptio-superior/0abd8942-619b-4cf1-964a-66ebd32c8bf6&gt; ;
+  dct:creator &lt;https://purl.archive.org/domain/mlao/creator/d-surace&gt; .
 
-<https://digi.vatlib.it/iiif/MSS_Vat.gr.984/canvas/p0715>
-  a <http://njh.me/Canvas> ;
-  ns0:partOf <https://digi.vatlib.it/iiif/MSS_Vat.gr.984/manifest.json> .
+&lt;https://digi.vatlib.it/iiif/MSS_Vat.gr.984/canvas/p0715&gt;
+  a &lt;http://njh.me/Canvas&gt; ;
+  ns0:partOf &lt;https://digi.vatlib.it/iiif/MSS_Vat.gr.984/manifest.json&gt; .
 
-<https://purl.archive.org/domain/mlao/interpretation/d7c7f5d1-a8f7-4536-8e32-a88cd6a9018b>
+&lt;https://purl.archive.org/domain/mlao/interpretation/d7c7f5d1-a8f7-4536-8e32-a88cd6a9018b&gt;
   a hico:InterpretationAct ;
-  hico:hasInterpretationCriterion <https://purl.archive.org/domain/mlao/interpretation/criterion/scholar-expertise> ;
-  hico:hasInterpretationType <https://purl.archive.org/domain/mlao/interpretation/type/philological-note> .
+  hico:hasInterpretationCriterion &lt;https://purl.archive.org/domain/mlao/interpretation/criterion/scholar-expertise&gt; ;
+  hico:hasInterpretationType &lt;https://purl.archive.org/domain/mlao/interpretation/type/philological-note&gt; .
 
-<https://purl.archive.org/domain/mlao/anchor/scriptio-superior/0abd8942-619b-4cf1-964a-66ebd32c8bf6>
+&lt;https://purl.archive.org/domain/mlao/anchor/scriptio-superior/0abd8942-619b-4cf1-964a-66ebd32c8bf6&gt;
   a mlao:Anchor ;
   rdfs:label "Scriptio Superior"^^xsd:string ;
-  mlao:hasConceptualLevel <https://purl.archive.org/domain/mlao/Work/4b5fd6f5-5e82-4293-a9ee-f9b9e091df81> ;
+  mlao:hasConceptualLevel &lt;https://purl.archive.org/domain/mlao/Work/4b5fd6f5-5e82-4293-a9ee-f9b9e091df81&gt; ;
   mlao:isAnchoredTo "https://purl.archive.org/domain/mlao/manuscript-vatgr984"^^xsd:string .
 
-<https://purl.archive.org/domain/mlao/Work/4b5fd6f5-5e82-4293-a9ee-f9b9e091df81> a <http://iflastandards.info/ns/fr/frbr/frbroo/F1> . "
-        </code>
+&lt;https://purl.archive.org/domain/mlao/Work/4b5fd6f5-5e82-4293-a9ee-f9b9e091df81&gt; a &lt;http://iflastandards.info/ns/fr/frbr/frbroo/F1&gt; .
+</code>
     </pre>
     
  </div>
